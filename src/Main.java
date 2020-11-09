@@ -18,6 +18,7 @@ public class Main {
         a.moden = true;
         a.coolDown();
 
+
         Peas p = new Peas();
         p.stykpris = 0.1;
         p.holdbarhed = new Date(1608768000);
