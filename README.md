@@ -5,3 +5,4 @@
 - Generer en KLASSEDIAGRAM til din løsning
 
 ![Klassediagram](https://raw.githubusercontent.com/andracs/NedarvningPolimorfi/master/Klassediagram.png)
+![Klassediagram](https://raw.githubusercontent.com/andracs/NedarvningPolimorfi/master/Klassediagram2.png)
