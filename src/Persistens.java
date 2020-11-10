@@ -11,6 +11,10 @@ import java.util.Scanner;
 public class Persistens {
 
     public static void main(String[] args) throws FileNotFoundException {
+
+        System.out.println("Velkommen til Grøntorvets lagersystem");
+        System.out.println("Indlæser data...");
+
         Persistens p = new Persistens();
         p.save();
         p.load();
