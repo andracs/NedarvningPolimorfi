@@ -17,7 +17,7 @@ public class Persistens {
 
         Persistens p = new Persistens();
         p.save();
-        p.load();
+        // p.load();
     }
 
 
