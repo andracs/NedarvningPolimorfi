@@ -1,3 +1,5 @@
+import fruits.*;
+import main.*;
 import java.util.Date;
 
 /**
@@ -12,9 +14,6 @@ public class Main {
     public static void main(String[] args) {
 
         Apple a = new Apple();
-        a.stykpris = 2;
-        a.holdbarhed = new Date(1608768000);
-        a.smidUd();
         a.moden = true;
         a.coolDown();
 
@@ -23,6 +22,8 @@ public class Main {
         p.stykpris = 0.1;
         p.holdbarhed = new Date(1608768000);
         p.freeze();
+
+        Konserver apple = (Konserver) new Apple();
 
     }
 

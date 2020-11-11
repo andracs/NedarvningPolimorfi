@@ -1,3 +1,5 @@
+package main;
+
 /**
  * Developed by András Ács (acsandras@gmail.com)
  * Zealand / www.zealand.dk
@@ -5,5 +7,8 @@
  * 09/11/2020
  */
 
-public class Mælk extends Varer {
+public interface Konserver {
+
+    public void konserver();
+
 }

@@ -1,3 +1,5 @@
+package main;
+
 /**
  * Developed by András Ács (acsandras@gmail.com)
  * Zealand / www.zealand.dk
@@ -5,9 +7,8 @@
  * 09/11/2020
  */
 
-public class Frugt extends Varer {
-
-    void coolDown() {
-        System.out.println("Æblerne køles ned.");
+public class Grønsag extends Vare {
+    public void freeze() {
+        System.out.println("Fryses ned.");
     }
 }

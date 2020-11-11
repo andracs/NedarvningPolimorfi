@@ -1,3 +1,5 @@
+package main;
+
 import java.util.Date;
 
 /**
@@ -7,11 +9,12 @@ import java.util.Date;
  * 09/11/2020
  */
 
-public class Varer {
+public class Vare {
 
-    double stykpris;
-    Date holdbarhed;
-    boolean kanSælges = true;
+    public String navn;
+    public double stykpris;
+    public Date holdbarhed;
+    public boolean kanSælges = true;
 
     void smidUd() {
         kanSælges = false;
