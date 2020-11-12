@@ -60,7 +60,7 @@ public class DataFil {
             Scanner input = new Scanner(file);
 
             // Read data from a file
-            while (input.hasNext()) {
+                while (input.hasNext()) {
                 String vare = input.next();
                 int antal = input.nextInt();
                 System.out.println(
