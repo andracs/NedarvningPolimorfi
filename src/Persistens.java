@@ -1,3 +1,8 @@
+import fruits.Melon;
+import main.Bønner;
+import main.Lager;
+import main.Vare;
+
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
@@ -16,7 +21,7 @@ public class Persistens {
         System.out.println("Indlæser data...");
 
         Persistens p = new Persistens();
-        p.save();
+        //p.save();
         p.load();
     }
 
@@ -27,11 +32,14 @@ public class Persistens {
         // Create a file
         java.io.PrintWriter output = new java.io.PrintWriter(file);
 
-        // Write formatted output to the file
-        output.print("Bønner ");
-        output.println(10);
-        output.print("Æbler ");
-        output.println(85);
+        // Gemme varelageret i filen
+        Lager lager = new Lager();
+        lager.fyldOp();
+
+        for (Vare vare : lager.vareLager) {
+            System.out.println("Skriver i filen");
+            output.println(vare.getClass().getSimpleName());
+        }
 
         // Close the file
         output.close();
@@ -43,14 +51,17 @@ public class Persistens {
 
         // Create a Scanner for the file
         Scanner input = new Scanner(file);
+        Lager lager = new Lager();
 
-        // Read data from a file
         while (input.hasNext()) {
-            String vare = input.next();
-            int antal = input.nextInt();
-            System.out.println(
-                    vare + " " + antal);
+            String vareString = input.next();
+            System.out.println(vareString);
+            if(vareString=="Bønner") lager.vareLager.add(new Bønner());
+            if(vareString=="Melon") lager.vareLager.add(new Melon());
         }
+
+        // Indlæse varelageret i filen
+
 
         // Close the file
         input.close();

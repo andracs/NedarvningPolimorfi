@@ -13,7 +13,7 @@ import java.util.stream.IntStream;
 
 public class Lager {
 
-    ArrayList<Vare> vareLager = new ArrayList<Vare>();
+    public ArrayList<Vare> vareLager = new ArrayList<Vare>();
 
     public void fyldOp() { // LEVEL1
 
@@ -24,13 +24,14 @@ public class Lager {
         // En anden måde kunne være
         vareLager.add(new Bønner());
 
-        // 77 bønner
+        // 27 bønner
         // Hvor mange skal jeg lave? 27
         for (int i = 0; i < 27; i++) {
             vareLager.add(new Bønner());
         }
 
         // Indtast bønner
+        /*
         Scanner scanner = new Scanner(System.in);
         System.out.println("Indtast bønner");
         while (true) {
@@ -40,6 +41,7 @@ public class Lager {
                 System.out.println("Bønne indtastet");
             } else { break;}
         }
+        */
 
         // Manuelt
         vareLager.add(new Bønner());
